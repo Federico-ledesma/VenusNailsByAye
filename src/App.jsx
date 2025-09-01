@@ -1,7 +1,5 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-
-import { Routes, Route} from "react-router-dom"
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 import NavBar from "./Components/0-NavBar"
 import Inicio from "./Components/1-inicio"
@@ -11,16 +9,21 @@ import ServicioRoute from "./routes/servicios-route"
 import GaleriaRoute from './routes/galeria-route'
 import SobreMi from './routes/sobremi-route'
 
-function App() {
-
+// Este componente hace scroll al top cada vez que cambia la ruta
+function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  return null;
+}
+
+function App() {
   return (
-      <>
+    <Router>
+      <ScrollToTop />
       <nav className="bg">
         <NavBar />
       </nav>
@@ -32,8 +35,8 @@ function App() {
           <Route path="/sobremi" element={<SobreMi />} />
         </Routes>
       </main>
-    </>
+    </Router>
   )
 }
 
-export default App
+export default App;
