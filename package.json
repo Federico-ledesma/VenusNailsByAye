@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://federico-ledesma.github.io/NailsByVenus",
+  "homepage": "https://federico-ledesma.github.io/VenusNailsByAye",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
