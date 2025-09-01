@@ -1,0 +1,59 @@
+.galeria{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flecha{
+    position: fixed;      /* Fijo en la pantalla */
+    bottom: 20px;         /* 20px desde abajo */
+    right: 20px;          /* 20px desde la derecha */
+    background: #333;     /* color de fondo */
+    border-radius: 50%;   /* círculo */
+    font-size: 20px;      /* tamaño de la flecha */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.titulo-galeria{
+    font-family: 'Gravitas';
+    padding-top: 2rem;
+}
+
+
+
+
+.imagen-contenedor-galeria{
+    min-width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.imagen{
+    width: 100%;
+    height: 80%;
+    padding: .3rem;
+}
+
+
+
+
+.gol{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-galeria{
+    color: black;
+    width: 90%;
+    padding: .2rem;
+    margin: .1rem;
+    border-radius: .4rem;
+}
+

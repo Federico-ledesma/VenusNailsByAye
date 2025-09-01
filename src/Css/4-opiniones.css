@@ -1,0 +1,16 @@
+.opiniones-titulo{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: 'Gravitas';
+    font-size: 1.4rem;
+}
+
+.opiniones-boton-contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+

@@ -1,0 +1,38 @@
+.titulo-ubicacion{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Gravitas';
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+
+.mapa-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24rem;
+    row-gap: 2rem;
+}
+
+.iconos-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.ubicacion-boton-contenedor{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.ubicacion-boton{
+    width: 10rem;
+    height: 3rem;
+    border-radius: .8rem;
+    color: black;
+}

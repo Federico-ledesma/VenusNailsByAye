@@ -1,0 +1,66 @@
+/* .navbar-fondo{
+   
+    
+} */
+
+.logo-img{
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.navbar-brands{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem;
+}
+
+.white{
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    
+    .logo-img{
+        width: 3.2rem;
+        margin-left: 1rem;
+    }
+    
+    .navbar-flex{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav-item{
+        padding: 0px 2rem;
+    }
+
+    .white{
+        font-size: 1.2rem;
+    }
+
+    /* Aplica a todos los links dentro del nav */
+    /* .navbar-flex .nav-item .white {
+        transition: filter 0s ease;
+    } */
+
+/* Cuando hago hover sobre cualquier link */
+    /* .navbar-flex:hover .white {
+        filter: blur(3px);
+        font-size: 1.22rem;
+    } */
+
+/* Pero el link que está en hover NO se blurea */
+    /* .navbar-flex .white:hover {
+        filter: none;
+    } */
+    
+}
