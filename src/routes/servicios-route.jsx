@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { FaClock, FaRegMoneyBillAlt } from "react-icons/fa";
+import { HiArrowUpCircle } from "react-icons/hi2";
+
 
 import '../routes-css/servicios-route.css'
 
@@ -11,12 +13,24 @@ function ServicioRoute() {
   }, []);
 
     return(
+
+      
+
         <div className='servicios'>
             <h1 className='titulo-servicio'>Servicios Principales</h1>
             <h2 className='subtitulo-servicio'>"Elegi el estilo que mas se adapte a vos. Tus uñas, tu expresion"</h2>
 
 
-        
+        <a
+                  href="#home"
+                  className="flecha"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  <HiArrowUpCircle size={40} />
+                </a>
 
         {/* ------------------------------------------ */}
 
@@ -43,12 +57,12 @@ function ServicioRoute() {
                 <p className='descripcion-uña-servicio'>El esmaltado semipermanente es una técnica de manicura en la que se aplica un esmalte especial que se endurece mediante luz LED o UV. Su fórmula combina características del esmalte tradicional y el gel, lo que permite una mayor duración sin perder el acabado brillante. Generalmente, puede mantenerse intacto entre dos y tres semanas, dependiendo del cuidado de las uñas.</p>
             
                 <div className='contenedor-lista-servicio'>
-                    <div>
+                    <div className="lista-servicio">
                       <FaClock />
                       <span>120'</span>
                     </div>
                     
-                    <div>
+                    <div className="lista-servicio">
                       <FaRegMoneyBillAlt />
                       <span>9.000</span>        
                     </div>
@@ -81,12 +95,12 @@ function ServicioRoute() {
                 <p className='descripcion-uña-servicio'>El kapping gel es una técnica de manicura que consiste en recubrir la uña natural con una capa de gel constructor para protegerla y darle mayor resistencia. No alarga la uña, sino que refuerza su estructura, evitando quiebres y permitiendo mantener el largo natural por más tiempo. Se seca bajo lámpara LED o UV y puede combinarse con esmalte tradicional o semipermanente.</p>
             
                 <div className='contenedor-lista-servicio'>
-                    <div>
+                    <div className="lista-servicio">
                       <FaClock />
                       <span>120'</span>
                     </div>
                     
-                    <div>
+                    <div className="lista-servicio">
                       <FaRegMoneyBillAlt />
                       <span>9.000</span>        
                     </div>       
@@ -118,12 +132,12 @@ function ServicioRoute() {
                 <p className='descripcion-uña-servicio'>El soft gel es un sistema de extensión de uñas que utiliza tips (extensiones) de gel preformados, diseñados para cubrir toda la uña natural. Se adhieren con gel y se curan bajo lámpara LED o UV, ofreciendo una superficie lisa y uniforme lista para esmaltar. Son más ligeros y flexibles que otros sistemas, lo que brinda mayor comodidad y un aspecto natural, además de permitir una aplicación rápida y segura para la uña.</p>
             
                 <div className='contenedor-lista-servicio'>
-                    <div>
+                    <div className="lista-servicio">
                       <FaClock />
                       <span>120'</span>
                     </div>
                     
-                    <div>
+                    <div className="lista-servicio">
                       <FaRegMoneyBillAlt />
                       <span>9.000</span>        
                     </div>       
@@ -155,12 +169,12 @@ function ServicioRoute() {
                 <p className='descripcion-uña-servicio'>El polygel es un material para construcción y esculpido de uñas que combina las propiedades del acrílico y el gel. Tiene una consistencia densa y moldeable, lo que permite trabajar la forma de la uña con precisión antes de curarlo bajo lámpara LED o UV. Es más ligero que el acrílico, pero más resistente que el gel tradicional, y se utiliza tanto para alargar como para reforzar la uña natural.</p>
             
                 <div className='contenedor-lista-servicio'>
-                    <div>
+                    <div className="lista-servicio">
                       <FaClock />
                       <span>120'</span>
                     </div>
                     
-                    <div>
+                    <div className="lista-servicio">
                       <FaRegMoneyBillAlt />
                       <span>9.000</span>        
                     </div>        
@@ -193,12 +207,12 @@ function ServicioRoute() {
                 <p className='descripcion-uña-servicio'>son extensiones artificiales hechas con una mezcla de polvo acrílico y líquido monómero, que se endurece al aire formando una capa resistente. Se usan para alargar la uña natural, reforzarla y permitir diseños decorativos duraderos. Requieren mantenimiento cada 2-3 semanas para rellenar el crecimiento y evitar desprendimientos.</p>
             
                 <div className='contenedor-lista-servicio'>
-                    <div>
+                    <div className="lista-servicio">
                       <FaClock />
                       <span>120'</span>
                     </div>
                     
-                    <div>
+                    <div className="lista-servicio">
                       <FaRegMoneyBillAlt />
                       <span>9.000</span>        
                     </div>       

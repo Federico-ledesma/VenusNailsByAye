@@ -1,5 +1,8 @@
 import '../routes-css/sobremi-route.css'
 
+import { HiArrowUpCircle } from "react-icons/hi2";
+
+
 import { Link } from 'react-router-dom'
 
 import Avatar from '../img/Avatar2.jpg'
@@ -15,6 +18,18 @@ function SobreMi() {
 
     return(
         <div className='fondo-sobremi'>
+
+          <a
+                  href="#home"
+                  className="flecha"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  <HiArrowUpCircle size={40} />
+                </a>
+                
             <h1 className='titulo-sobremi'>"Sobre Mi"</h1>
             <h2 className='subtitulo-sobremi'>"Conoce quien esta detras de cada diseño"</h2>
 

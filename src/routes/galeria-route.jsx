@@ -1,6 +1,5 @@
 import '../routes-css/galeria-route.css'
 
-import { useEffect } from "react";
 
 import { useState } from "react";
 
@@ -71,7 +70,14 @@ function GaleriaRoute() {
 
         <div id='galeria-inicio' className='galeria'>
 
-        <a href='#galeria-inicio' className='flecha'>
+        <a
+          href="#home"
+          className="flecha"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           <HiArrowUpCircle size={40} />
         </a>
 

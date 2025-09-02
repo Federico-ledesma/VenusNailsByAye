@@ -19,6 +19,9 @@ import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa'
 import { HiArrowUpCircle } from "react-icons/hi2";
 import '../Css/6-ubicacion.css'
 
+
+
+
 function Inicio() {
 
     useEffect(() => {
@@ -29,20 +32,29 @@ function Inicio() {
   }, []);
 
 
-   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  
 
   
 
     return(
         <>
 
-            <a href='#inicio' className='flecha'>
-              <HiArrowUpCircle size={40} />
-            </a>
+        <a
+          href="#home"
+          className="flecha"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          <HiArrowUpCircle size={40} />
+        </a>
 
-            <div id='inicio' className='inicio-contenedor'>
+        
+
+            
+
+            <div  className='inicio-contenedor'>
                 
                 <h1  className='inicio-titulo'>"Realiza tu belleza con uñas perfectas"</h1>
                 
